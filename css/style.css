@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .heder_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.header .heder_left .header_left_logo {
+  width: 38px;
+  height: 47.5px;
+}
+.header .heder_left .header__left__text {
+  font-size: 30px;
+  font-weight: 70px;
+  color: #2947A9;
+}
