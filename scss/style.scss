@@ -2,7 +2,7 @@
 @import 'var';
 
 body{
-    font-family: sans-serif;
+    font-family: Work Sans;
 }
 
 .wrapper{
@@ -37,6 +37,10 @@ body{
             display: flex;
             gap: 50px;
 
+            .header__nav__list__a{
+                cursor: pointer;
+            }
+
             @include md{
                gap: 25px;
             }
@@ -47,8 +51,8 @@ body{
                 flex-direction: column;
                 position: absolute;
                 top: 80px;
-                left: 50%; /* Центрування по горизонталі */
-                transform: translateX(-50%); /* Зсув для вирівнювання по центру */
+                left: 50%;
+                transform: translateX(-50%);
                 z-index: 10;
             }
 
@@ -92,11 +96,11 @@ body{
 
 .first__bg {
     width: 100%;
-    height: 100vh; /* Це встановить висоту рівною висоті вікна браузера */
-    background-image: url('/img/slider1/1.jpg');
-    background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
-    background-position: center; /* Зображення буде центроване */
-    background-repeat: no-repeat; /* Забороняє повторення зображення */
+    height: 100vh; 
+    background-image: url('/img/slider1/pexels-pixabay-162539.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     position: relative;
 
     .first__block{
@@ -108,11 +112,13 @@ body{
 
 .first{
     display: flex;
-    padding-top: 250px;
+    padding-top: 400px;
 
     .frist__text{
-        @include font(72px, 600, rgb(41, 46, 61));
+        @include font(72px, 600, rgb(41, 71, 169));
         max-width: 556px;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
     }
 }
 

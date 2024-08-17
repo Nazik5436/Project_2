@@ -1,6 +1,5 @@
-@charset "UTF-8";
 body {
-  font-family: sans-serif;
+  font-family: Work Sans;
 }
 
 .wrapper {
@@ -46,6 +45,9 @@ body {
   display: flex;
   gap: 50px;
 }
+.header .header__nav .header__nav__list .header__nav__list__a {
+  cursor: pointer;
+}
 @media (max-width: 780px) {
   .header .header__nav .header__nav__list {
     gap: 25px;
@@ -65,9 +67,9 @@ body {
             flex-direction: column;
     position: absolute;
     top: 80px;
-    left: 50%; /* Центрування по горизонталі */
+    left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); /* Зсув для вирівнювання по центру */
+            transform: translateX(-50%);
     z-index: 10;
   }
 }
@@ -105,11 +107,11 @@ body {
 
 .first__bg {
   width: 100%;
-  height: 100vh; /* Це встановить висоту рівною висоті вікна браузера */
-  background-image: url("/img/slider1/1.jpg");
-  background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
-  background-position: center; /* Зображення буде центроване */
-  background-repeat: no-repeat; /* Забороняє повторення зображення */
+  height: 100vh;
+  background-image: url("/img/slider1/pexels-pixabay-162539.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 .first__bg .first__block {
@@ -122,13 +124,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 250px;
+  padding-top: 400px;
 }
 .first .frist__text {
   font-size: 72px;
   font-weight: 600;
-  color: rgb(41, 46, 61);
+  color: rgb(41, 71, 169);
   max-width: 556px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .first__block__btn {
