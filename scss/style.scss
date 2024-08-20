@@ -126,3 +126,69 @@ body{
 .first__block__btn{
     cursor: pointer;
 }
+
+
+.main{
+
+    .first__section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 433px;
+        margin-top: 60px;
+
+        .first__section__title{
+            @include main-title;
+            padding-bottom: 48px;
+        }
+
+        .first__section__position{
+            display: flex;
+            justify-content: center;
+            gap: 66px;
+
+            .first__section__block{
+                border: 1.4px solid rgb(224, 227, 235);
+                border-radius: 4px;
+                width: 292px;
+                height: 197px;
+
+                .first__section__icon{
+                    width: 36px;
+                    height: 36px;
+                    padding: 21px 0px 19px 21px; 
+                }
+
+                .first__section__block__title{
+                    color: rgb(61, 68, 92);
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    padding: 0px 0px 18px 20px;
+                }
+
+                .first__section__block__par{
+                    color: rgb(133, 142, 173);
+                    font-family: Work Sans;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    padding: 0px 0px 0px 20px;
+                    width: 254px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
