@@ -3,7 +3,7 @@ const navMenu = document.querySelector(".header__nav__list");
 const closeBtn = document.querySelector(".close");
 
 function handleResize() {
-    if (window.innerWidth > 670) { // Замініть на відповідну ширину вашого `md-ms` брейкпоінта
+    if (window.innerWidth > 670) { 
         navMenu.style.display = "flex";
         burgerMenu.style.display = "none";
         closeBtn.style.display = "none";

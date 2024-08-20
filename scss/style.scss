@@ -1,6 +1,10 @@
 @import 'mixin';
 @import 'var';
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Work Sans;
 }
@@ -102,6 +106,7 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
     position: relative;
+    box-sizing: border-box;
 
     .first__block{
         position: absolute;
@@ -135,7 +140,7 @@ body{
         justify-content: center;
         flex-direction: column;
         height: 433px;
-        margin-top: 60px;
+        margin: 60px 0px 84px 0px;
 
         .first__section__title{
             @include main-title;
@@ -152,6 +157,7 @@ body{
                 border-radius: 4px;
                 width: 292px;
                 height: 197px;
+                transition: transform 0.3s ease-in-out;
 
                 .first__section__icon{
                     width: 36px;
@@ -160,33 +166,82 @@ body{
                 }
 
                 .first__section__block__title{
-                    color: rgb(61, 68, 92);
-                    font-family: Work Sans;
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 23px;
-                    letter-spacing: 0%;
-                    text-align: left;
+                    @include first__section__block__title;
                     padding: 0px 0px 18px 20px;
                 }
 
                 .first__section__block__par{
-                    color: rgb(133, 142, 173);
-                    font-family: Work Sans;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 19px;
-                    letter-spacing: 0%;
-                    text-align: left;
+                    @include first__section__block__par;
                     padding: 0px 0px 0px 20px;
                     width: 254px;
                 }
+            }
+
+            .first__section__block:hover{
+                transform: scale(1.1);
             }
         }
     }
 
 
+    .second__section{
+        margin: 74px 0px 130px 0px;
 
+        .second__osnova{
+            display: flex;
+            justify-content: center;
+
+            .second__section__img{
+                width: 902px;
+                height: 669px;
+            }
+
+            .second__section__block{
+                background: $blue;
+                width: 488px;
+                height: 523px;
+
+                .second__section__title{
+                    color: rgb(255, 255, 255);
+                    font-family: Work Sans;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 42px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    padding: 50px 0px 35px 40px;
+                }
+
+                .second__section__par{
+                    color: rgb(255, 255, 255);
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    padding: 0px 0px 25px 40px;
+                    width: 388px;
+                }
+
+                .second__section__but{
+                    color: $blue;
+                    font-family: Work Sans;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    border: 2px solid rgb(41, 71, 169);
+                    border-radius: 6px;
+                    background: rgb(255, 255, 255);
+                    padding: 10px;
+                    margin: 48px 0px 0px 40px;
+
+                }
+            }
+        }
+    }
 
 
 

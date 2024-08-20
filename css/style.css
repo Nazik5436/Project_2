@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Work Sans;
 }
@@ -113,6 +117,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .first__bg .first__block {
   position: absolute;
@@ -151,7 +157,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 433px;
-  margin-top: 60px;
+  margin: 60px 0px 84px 0px;
 }
 .main .first__section .first__section__title {
   color: rgb(41, 46, 61);
@@ -177,6 +183,10 @@ body {
   border-radius: 4px;
   width: 292px;
   height: 197px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .main .first__section .first__section__position .first__section__block .first__section__icon {
   width: 36px;
@@ -203,4 +213,63 @@ body {
   text-align: left;
   padding: 0px 0px 0px 20px;
   width: 254px;
+}
+.main .first__section .first__section__position .first__section__block:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.main .second__section {
+  margin: 74px 0px 130px 0px;
+}
+.main .second__section .second__osnova {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .second__section .second__osnova .second__section__img {
+  width: 902px;
+  height: 669px;
+}
+.main .second__section .second__osnova .second__section__block {
+  background: rgb(41, 71, 169);
+  width: 488px;
+  height: 523px;
+}
+.main .second__section .second__osnova .second__section__block .second__section__title {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 50px 0px 35px 40px;
+}
+.main .second__section .second__osnova .second__section__block .second__section__par {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 0px 0px 25px 40px;
+  width: 388px;
+}
+.main .second__section .second__osnova .second__section__block .second__section__but {
+  color: rgb(41, 71, 169);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 2px solid rgb(41, 71, 169);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 48px 0px 0px 40px;
 }
