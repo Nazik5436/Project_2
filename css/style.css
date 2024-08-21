@@ -157,7 +157,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 433px;
-  margin: 60px 0px 84px 0px;
+  margin: 60px 0px 0px 0px;
 }
 .main .first__section .first__section__title {
   color: rgb(41, 46, 61);
@@ -227,32 +227,35 @@ body {
           transform: scale(1.1);
 }
 .main .second__section {
-  margin: 74px 0px 130px 0px;
+  margin: 35px 0px 100px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 800px;
 }
 .main .second__section .second__osnova {
   position: relative;
 }
 .main .second__section .second__osnova .second__section__img {
-  width: 902px;
   height: 669px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-70%, -50%);
+          transform: translate(-70%, -50%);
 }
 .main .second__section .second__osnova .second__section__block {
   background: rgb(41, 71, 169);
   width: 488px;
   height: 523px;
   position: absolute;
-  top: 48%;
-  left: 85%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(20%, -53%);
+          transform: translate(20%, -53%);
 }
 .main .second__section .second__osnova .second__section__block .second__section__title {
   color: rgb(255, 255, 255);
@@ -288,4 +291,107 @@ body {
   background: rgb(255, 255, 255);
   padding: 10px;
   margin: 48px 0px 0px 40px;
+  cursor: pointer;
+}
+.main .third__section {
+  height: 608px;
+  background: rgb(246, 248, 247);
+}
+.main .third__section .third__osnova .third__section__title {
+  color: rgb(41, 46, 61);
+  font-family: Work Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 44px 0px 36px 0px;
+}
+.main .third__section .third__osnova .third__section__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 48px;
+  gap: 98px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block__even {
+  width: 271px;
+  height: 181px;
+  background: rgb(41, 71, 169);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+          box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block__even .third__section__row__block__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 41px 0px 23px 0px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block__even .third__section__row__block__hr {
+  width: 60px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block__even .third__section__row__block__whitepar {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 10px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block__even:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block {
+  width: 271px;
+  height: 181px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+          box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block .third__section__row__block__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 41px 0px 23px 0px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block .third__section__row__block__hr {
+  width: 60px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block .third__section__row__block__bluepar {
+  color: rgb(41, 71, 169);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 10px;
+}
+.main .third__section .third__osnova .third__section__row .third__section__row__block:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }

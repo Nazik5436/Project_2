@@ -140,7 +140,7 @@ body{
         justify-content: center;
         flex-direction: column;
         height: 433px;
-        margin: 60px 0px 84px 0px;
+        margin: 60px 0px 0px 0px;
 
         .first__section__title{
             @include main-title;
@@ -191,17 +191,20 @@ body{
 
 
     .second__section{
-        margin: 74px 0px 130px 0px;
+        margin: 35px 0px 100px 0px;
         display: flex;
-       justify-content: center;
+        justify-content: center;
+        height: 800px;
 
         .second__osnova{
             position: relative;
-
+            
             .second__section__img{
-                width: 902px;
                 height: 669px;
-                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-70%, -50%);
             }
 
             .second__section__block{
@@ -209,9 +212,9 @@ body{
                 width: 488px;
                 height: 523px;
                 position: absolute;
-                top: 48%;
-                left: 85%;
-                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                transform: translate(20%, -53%);
 
                 .second__section__title{
                     color: rgb(255, 255, 255);
@@ -249,9 +252,94 @@ body{
                     background: rgb(255, 255, 255);
                     padding: 10px;
                     margin: 48px 0px 0px 40px;
-
+                    cursor: pointer;
                 }
             }
         }
     }
+
+
+    .third__section{
+        height: 608px;
+        background: $gray;
+
+        .third__osnova{
+
+            .third__section__title{
+                @include main-title;
+                padding: 44px 0px 36px 0px;
+            }
+
+            .third__section__row{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 48px;
+                gap: 98px;
+
+                .third__section__row__block__even{
+                    width: 271px;
+                    height: 181px;
+                    background: $blue;
+                    border-radius: 4px;
+                    box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+                    transition: transform 0.3s ease-in-out;
+
+                    .third__section__row__block__img{
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        padding: 41px 0px 23px 0px;
+                    }
+
+                    .third__section__row__block__hr{
+                        width: 60px;
+                    }
+
+                    .third__section__row__block__whitepar{
+                        @include third__section__row__block__whitepar;
+                        padding-top: 10px;
+                    }
+                }
+
+                .third__section__row__block__even:hover{
+                    transform: scale(1.1);
+                }
+
+                .third__section__row__block{
+                    width: 271px;
+                    height: 181px;
+                    background: $white;
+                    border-radius: 4px;
+                    box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+                    transition: transform 0.3s ease-in-out;
+
+                    .third__section__row__block__img{
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        padding: 41px 0px 23px 0px;
+                    }
+
+                    .third__section__row__block__hr{
+                        width: 60px;
+                    }
+
+                    .third__section__row__block__bluepar{
+                        @include third__section__row__block__bluepar;
+                        padding-top: 10px;
+                    }
+                }
+
+                .third__section__row__block:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
 }

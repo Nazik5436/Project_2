@@ -39,6 +39,26 @@
     text-align: left;
 }
 
+@mixin third__section__row__block__bluepar{
+    color: rgb(41, 71, 169);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+@mixin third__section__row__block__whitepar{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
 $screen-md-min: 780px;
 
 @mixin md {
