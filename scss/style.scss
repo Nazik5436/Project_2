@@ -109,7 +109,10 @@ body{
     box-sizing: border-box;
 
     .first__block{
+        display: flex;
+        flex-direction: column;
         position: absolute;
+        background: rgb(53, 89, 199);
         right: 0;
         bottom: 0;
     }
@@ -127,10 +130,26 @@ body{
     }
 }
 
+    .first__block__btn{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.first__block__btn{
-    cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main{
@@ -337,5 +356,5 @@ body{
         }
     }
 
-    
+
 }
