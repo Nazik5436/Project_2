@@ -178,6 +178,14 @@ body {
           justify-content: center;
   gap: 66px;
 }
+@media screen and (max-width: 1015px) {
+  .main .first__section .first__section__position {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .main .first__section .first__section__position .first__section__block {
   border: 1.4px solid rgb(224, 227, 235);
   border-radius: 4px;
@@ -220,8 +228,6 @@ body {
 }
 .main .second__section {
   margin: 74px 0px 130px 0px;
-}
-.main .second__section .second__osnova {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,14 +235,24 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.main .second__section .second__osnova {
+  position: relative;
+}
 .main .second__section .second__osnova .second__section__img {
   width: 902px;
   height: 669px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .second__section .second__osnova .second__section__block {
   background: rgb(41, 71, 169);
   width: 488px;
   height: 523px;
+  position: absolute;
+  top: 48%;
+  left: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .main .second__section .second__osnova .second__section__block .second__section__title {
   color: rgb(255, 255, 255);

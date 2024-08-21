@@ -152,12 +152,18 @@ body{
             justify-content: center;
             gap: 66px;
 
+            @media screen and (max-width: 1015px) {
+                flex-direction: column;
+            }
+
             .first__section__block{
                 border: 1.4px solid rgb(224, 227, 235);
                 border-radius: 4px;
                 width: 292px;
                 height: 197px;
                 transition: transform 0.3s ease-in-out;
+
+                
 
                 .first__section__icon{
                     width: 36px;
@@ -186,20 +192,26 @@ body{
 
     .second__section{
         margin: 74px 0px 130px 0px;
+        display: flex;
+       justify-content: center;
 
         .second__osnova{
-            display: flex;
-            justify-content: center;
+            position: relative;
 
             .second__section__img{
                 width: 902px;
                 height: 669px;
+                object-fit: cover;
             }
 
             .second__section__block{
                 background: $blue;
                 width: 488px;
                 height: 523px;
+                position: absolute;
+                top: 48%;
+                left: 85%;
+                transform: translate(-50%, -50%);
 
                 .second__section__title{
                     color: rgb(255, 255, 255);
