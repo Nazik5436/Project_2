@@ -129,9 +129,32 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  background: rgb(53, 89, 199);
   right: 0;
   bottom: 0;
+}
+.first__bg .first__block .first__block__up {
+  background: rgb(53, 89, 199);
+  width: 416px;
+  height: 150px;
+}
+.first__bg .first__block .first__block__up .first__block__up__title {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 20px 0px;
+}
+.first__bg .first__block .first__block__up .first__block__up__par {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .first {
@@ -149,7 +172,20 @@ body {
   text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
-.first__block__btn {
+.first__block__btn__osnova {
+  width: 416px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(41, 46, 61);
+}
+.first__block__btn__osnova .first__block__btn {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +193,20 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 12px;
+}
+.first__block__btn__osnova .first__block__btn .first__btn__text {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.first__block__btn__osnova .first__block__btn .arrow {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .main .first__section {

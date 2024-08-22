@@ -112,9 +112,24 @@ body{
         display: flex;
         flex-direction: column;
         position: absolute;
-        background: rgb(53, 89, 199);
+        
         right: 0;
         bottom: 0;
+
+        .first__block__up{
+            background: rgb(53, 89, 199);
+            width: 416px;
+            height: 150px;
+
+            .first__block__up__title{
+                @include first__block__up__title;
+                padding: 20px 0px;
+            }
+
+            .first__block__up__par{
+                @include first__block__up__par;
+            }
+        }
     }
 }
 
@@ -130,11 +145,31 @@ body{
     }
 }
 
+.first__block__btn__osnova{
+    width: 416px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(41, 46, 61);
+
     .first__block__btn{
         cursor: pointer;
         display: flex;
         justify-content: space-between;
+        gap: 12px;
+
+        .first__btn__text{
+            @include first__btn__text;
+        }
+
+        .arrow{
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
     }
+}
+
 
 
 
